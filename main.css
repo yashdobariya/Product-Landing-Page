@@ -1,0 +1,206 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(211, 202, 202);
+  margin: 0px;
+  box-sizing: border-box;
+}
+.main {
+  max-width: 100%;
+}
+
+#header {
+  display: flex;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: rgb(211, 202, 202);
+  position: fixed;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+}
+
+.logo {
+  display: flex;
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+#nav-bar ul {
+  text-align: center;
+}
+
+#nav-bar ul li {
+  display: inline;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  align-items: center;
+}
+
+#form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form input {
+  display: block;
+  background-color: #e9dcdc;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 15px;
+  border: none;
+  border-radius: 4px;
+}
+
+form #submit {
+  background-color: rgb(248, 171, 108);
+}
+
+#Features {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#Features .card {
+  display: flex;
+  align-items: center;
+}
+
+#Features .card .icon {
+  max-width: 100%;
+  padding: 20px;
+}
+
+#how-its-work {
+  width: 100%;
+  margin: 50px 50px 50px 350px;
+}
+
+#Pricing {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+#Pricing .card {
+  margin: auto;
+  margin-bottom: 15px;
+  border: 1px solid green;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#Pricing .card h2 {
+  background-color: rgb(248, 171, 108);
+  color: black;
+  border-radius: 10px;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+#Pricing .card b {
+  font-size: 20px;
+}
+
+#Pricing .card button {
+  margin: 15px 0;
+  background-color: rgb(248, 171, 108);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+footer {
+  padding: 10px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: rgb(224, 166, 147);
+}
+
+footer > ul li {
+  display: inline;
+}
+
+footer > ul li a {
+  text-decoration: none;
+  margin: 10px;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+    display: block;
+  }
+
+  #header .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #nav-bar ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  #nav-bar ul li {
+    display: inline;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+
+  .form-div {
+    margin-top: 250px;
+  }
+
+  #Features {
+    margin-top: 50px;
+  }
+
+  #Features .card .icon {
+    display: none;
+  }
+  #Features .card .content {
+    text-align: left;
+  }
+  #how-its-work {
+    width: 100%;
+    margin: 50px auto;
+  }
+  #Pricing {
+    flex-direction: column;
+    align-items: center;
+  }
+}
